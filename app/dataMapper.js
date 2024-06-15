@@ -10,8 +10,16 @@ const dataMapper = {
   async getCard(cardId) {
     const query = `SELECT * FROM card WHERE id = ${cardId}`;
     const result = await database.query(query);
-    console.log(result.rows[0]);
     return result.rows[0];
+  },
+
+  async getCardsByElement(element) {
+    let query = `SELECT * FROM card WHERE element = '${element}'`;
+    if (element === "null") {
+      query = `SELECT * FROM card WHERE element IS NULL`;
+    }
+    const result = await database.query(query);
+    return result.rows;
   },
 };
 
