@@ -21,6 +21,12 @@ const dataMapper = {
     const result = await database.query(query);
     return result.rows;
   },
+
+  async getCardWithName(cardName) {
+    let query = `SELECT * FROM card WHERE name = '${cardName}'`;
+    const result = await database.query(query);
+    return result.rows[0];
+  },
 };
 
 module.exports = dataMapper;
