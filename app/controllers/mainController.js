@@ -65,6 +65,14 @@ const mainController = {
         .send(`An error occured with the database :\n${error.message}`);
     }
   },
+
+  deckPage: (req, res) => {
+    const deck = req.session.deck;
+    res.render("deck", {
+      deck,
+      title: "Votre deck",
+    });
+  },
 };
 
 module.exports = mainController;

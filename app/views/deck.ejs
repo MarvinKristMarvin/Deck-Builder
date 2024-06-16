@@ -1,0 +1,13 @@
+<%- include('header') %>
+
+<h1><%= title %></h1>
+
+<% deck.forEach(card => { %>
+<p>ID : <%= card.id %></p>
+<p>NAME : <%= card.name %></p>
+<p>ELEMENT : <%= card.element %></p>
+<p>NORTH : <%= card.value_north %></p>
+<p>EAST : <%= card.value_east %></p>
+<p>SOUTH : <%= card.value_south %></p>
+<p>WEST : <%= card.value_west %></p>
+<% }) %> <%- include('footer') %>
