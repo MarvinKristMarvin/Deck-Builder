@@ -23,6 +23,7 @@ Quand on clique sur une carte depuis la page d'accueil, on veut arriver sur la p
 En terme d'intégration, fait comme tu veux, mais n'y passe pas trop de temps ! Reste simple, l'important est que les informations disponibles soient visibles.
 
 A toi de jouer !
+
 <details>
 <summary>Un peu d'aide...</summary>
 
@@ -63,8 +64,7 @@ Et pour éviter de faire trop d'appels à la base de données, on va directement
 
 - [Un petit tour sur npm](https://www.npmjs.com/package/express-session).
 - La correction des challenges de cette semaine _peut aider_. :wink:
-- 
-</details>
+- </details>
 
 ### 3.2 Ajouter une carte au deck
 
